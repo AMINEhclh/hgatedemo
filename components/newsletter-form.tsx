@@ -35,6 +35,7 @@ export default function NewsletterForm() {
           <input
             type="email"
             value={email}
+            name="email"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
             className="w-full px-6 py-4 rounded-full border-0 bg-white/70 backdrop-blur-sm shadow-inner 
