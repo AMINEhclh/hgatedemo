@@ -61,6 +61,7 @@ export default function ContactForm({ recipientEmail }: ContactFormProps) {
               type="text"
               id="name"
               value={name}
+              name="username"
               onChange={(e) => setName(e.target.value)}
               placeholder="John Doe"
               className="w-full px-6 py-3 rounded-xl border-0 bg-white/70 backdrop-blur-sm shadow-inner 
@@ -77,6 +78,7 @@ export default function ContactForm({ recipientEmail }: ContactFormProps) {
               type="email"
               id="email"
               value={email}
+              name="userEmail"
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
               className="w-full px-6 py-3 rounded-xl border-0 bg-white/70 backdrop-blur-sm shadow-inner 
@@ -93,6 +95,7 @@ export default function ContactForm({ recipientEmail }: ContactFormProps) {
           <textarea
             id="message"
             value={message}
+            name="message"
             onChange={(e) => setMessage(e.target.value)}
             placeholder="How can we help you?"
             rows={4}
