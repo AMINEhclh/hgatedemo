@@ -29,7 +29,7 @@ export default function NewsletterForm() {
 
   return (
     <div className="max-w-md">
-      <form onSubmit={handleSubmit} className="space-y-3">
+      <form onSubmit={handleSubmit} className="space-y-3" netlify>
         <p className="text-sm font-medium text-gray-700">Subscribe to our newsletter</p>
         <div className="flex relative">
           <input
